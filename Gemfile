@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 gem 'bootstrap-sass', '~> 3.3.4'
+
+gem "simple_calendar", "~> 2.0"
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do # <<<< :development, not devlopment
   gem 'sqlite3'

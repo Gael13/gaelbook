@@ -32,18 +32,36 @@
   <!-- Tab panes -->
   <div class="tab-content" style="margin-top: 30px;">
     <div role="tabpanel" class="tab-pane active" id="pepsico">
-      <%= image_tag "magies_A.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "magies_B.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "magies_C.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "magies_D.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "magies_E.png", style: 'border: 2px solid #bce8f1' %>
+      
+      <%= month_calendar do |date| %>
+  <%= date %>
+<% end %>
     </div>
     <div role="tabpanel" class="tab-pane" id="loreal">
-      <%= image_tag "csrindex.png", style: 'border: 2px solid #bce8f1' %>
+      <div id="filters">
+    Color: <select id="filter-select">
+        <option value="">All</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select><br>
+    Title: <input type="text" class="quicksearch">
+</div>
+
+<div id="container">
+    <div class="red item"><div class="title">Title aaa</div><div class="description">Description xxx</div></div>
+    <div class="green item"><div class="title">Title bbb</div><div class="description">Description yyy</div></div>
+    <div class="blue item"><div class="title">Title ccc</div><div class="description">Description zzz</div></div>
+    <div class="yellow item"><div class="title">Title aaa</div><div class="description">Description xxx</div></div>
+    <div class="red item"><div class="title">Title bbb</div><div class="description">Description yyy</div></div>
+    <div class="green item"><div class="title">Title ccc</div><div class="description">Description zzz</div></div>
+    <div class="blue item"><div class="title">Title aaa</div><div class="description">Description xxx</div></div>
+    <div class="yellow item"><div class="title">Title bbb</div><div class="description">Description yyy</div></div>
+    <div class="red item"><div class="title">Title ccc</div><div class="description">Description zzz</div></div>
+    <div class="green item"><div class="title">Title aaa</div><div class="description">Description xxx</div></div>
+    <div class="blue item"><div class="title">Title bbb</div><div class="description">Description yyy</div></div>
+    <div class="yellow item"><div class="title">Title ccc</div><div class="description">Description zzz</div></div>
+</div>
     </div>
     <div role="tabpanel" class="tab-pane" id="geopost">
       <%= image_tag "geopost.png", style: 'border: 2px solid #bce8f1' %>
