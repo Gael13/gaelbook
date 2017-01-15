@@ -16,7 +16,14 @@ $ ->
     $('#pepsico').show()
     $('#loreal').hide()
     $('#tab_stores').hide()
+    $('#back').show()
     return
+
+  $('#back').click ->
+    $('#pepsico').hide()
+    $('#loreal').show()
+    $('#tab_stores').show()
+    $('#back').hide()
     
 
   $('.quicksearch').on 'keyup', ->
