@@ -1,5 +1,5 @@
 
-<div class="row-fluid" style="margin-left: 50px;margin-right: 50px;">
+<!--<div class="row-fluid" style="margin-left: 50px;margin-right: 50px;">
 
 <div class="col-md-12" style="margin-bottom: 40px;">
 <div class="panel panel-info">
@@ -12,33 +12,21 @@
 </div>
 </div>
 
-</div>
+</div>-->
 
 <div class="row-fluid" style="margin: 20px 20px 0 20px;">
 <div class="col-md-12">
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#pepsico" aria-controls="pepsico" role="tab" data-toggle="tab">Pepsico - Magies</a></li>
-    <li role="presentation"><a href="#loreal" aria-controls="loreal" role="tab" data-toggle="tab">L'Oréal</a></li>
-    <li role="presentation"><a href="#geopost" aria-controls="geopost" role="tab" data-toggle="tab">Géopost</a></li>
-    <li role="presentation"><a href="#polepass" aria-controls="polepass" role="tab" data-toggle="tab">Polepass</a></li>
-    <li role="presentation"><a href="#fibralp" aria-controls="fibralp" role="tab" data-toggle="tab">Fibralp - Valtech Industrie</a></li>
-    <li role="presentation"><a href="#lcabox" aria-controls="lcabox" role="tab" data-toggle="tab">LCABox</a></li>
-    <li role="presentation"><a href="#betongoal" aria-controls="betongoal" role="tab" data-toggle="tab">Betongoal</a></li>
-    <li role="presentation"><a href="#greetest" aria-controls="greetest" role="tab" data-toggle="tab">Greetest</a></li>
+    <li role="presentation" id="tab_stores" class="active"><a href="#loreal" aria-controls="loreal" role="tab" data-toggle="tab">Stores</a></li>
+    <li role="presentation" style="display:none;"><a href="#pepsico" aria-controls="pepsico" role="tab" data-toggle="tab">RDV</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content" style="margin-top: 30px;">
-    <div role="tabpanel" class="tab-pane active" id="pepsico">
-      
-      <%= month_calendar do |date| %>
-  <%= date %>
-<% end %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="loreal">
-      <div id="filters">
+    <div role="tabpanel" class="tab-pane active" id="loreal">
+      <!--<div id="filters">
     Color: <select id="filter-select">
         <option value="">All</option>
         <option value="red">Red</option>
@@ -61,32 +49,151 @@
     <div class="green item"><div class="title">Title aaa</div><div class="description">Description xxx</div></div>
     <div class="blue item"><div class="title">Title bbb</div><div class="description">Description yyy</div></div>
     <div class="yellow item"><div class="title">Title ccc</div><div class="description">Description zzz</div></div>
+</div>-->
+
+
+<h3>Boulanger - recherche de magasins</h3>
+
+<p><input type="text" class="quicksearch" placeholder="Search" /></p>
+
+
+<div class="container">
+  <div class="element-item transition metal " data-category="transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Paris Rivoli</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">80</p>
+    <p class="weight">200.59</p>
+  </div>
+  <div class="element-item metalloid " data-category="metalloid">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Paris Chatelet</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">52</p>
+    <p class="weight">127.6</p>
+  </div>
+  <div class="element-item post-transition metal " data-category="post-transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Paris Bastille</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">83</p>
+    <p class="weight">208.980</p>
+  </div>
+  <div class="element-item post-transition metal " data-category="post-transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Paris Nation</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">82</p>
+    <p class="weight">207.2</p>
+  </div>
+  <div class="element-item transition metal " data-category="transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Paris Ternes</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">79</p>
+    <p class="weight">196.967</p>
+  </div>
+  <div class="element-item alkali metal " data-category="alkali">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Lyon 1</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">19</p>
+    <p class="weight">39.0983</p>
+  </div>
+  <div class="element-item alkali metal " data-category="alkali">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Lyon 2</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">11</p>
+    <p class="weight">22.99</p>
+  </div>
+  <div class="element-item transition metal " data-category="transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Marseille Vieux-Port</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">48</p>
+    <p class="weight">112.411</p>
+  </div>
+  <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %><h3 class="title">Marseille Prado</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div>
+  <div class="element-item transition metal " data-category="transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Marseille Joliette</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">75</p>
+    <p class="weight">186.207</p>
+  </div>
+  <div class="element-item post-transition metal " data-category="post-transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %><h3 class="title">Boulogne-Billancourt</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">81</p>
+    <p class="weight">204.383</p>
+  </div>
+  <div class="element-item metalloid " data-category="metalloid">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Issy-les-moulineaux</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">51</p>
+    <p class="weight">121.76</p>
+  </div>
+  <div class="element-item transition metal " data-category="transition">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Sèvres</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">27</p>
+    <p class="weight">58.933</p>
+  </div>
+  <div class="element-item lanthanoid metal inner-transition " data-category="lanthanoid">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Meudon</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">70</p>
+    <p class="weight">173.054</p>
+  </div>
+  <div class="element-item noble-gas nonmetal " data-category="noble-gas">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Puteaux</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">18</p>
+    <p class="weight">39.948</p>
+  </div>
+  <div class="element-item diatomic nonmetal " data-category="diatomic">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %><h3 class="title">Neuilly</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">7</p>
+    <p class="weight">14.007</p>
+  </div>
+  <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Levallois</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">92</p>
+    <p class="weight">238.029</p>
+  </div>
+  <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
+    <h3 class="title">Suresnes</h3>
+    <p class="symbol">Bo</p>
+    <p class="number">94</p>
+    <p class="weight">(244)</p>
+  </div>
 </div>
+
+
     </div>
-    <div role="tabpanel" class="tab-pane" id="geopost">
-      <%= image_tag "geopost.png", style: 'border: 2px solid #bce8f1' %>
+    <div role="tabpanel" class="tab-pane" style="display: none;" id="pepsico">
+      
+      <%= month_calendar do |date| %>
+  <%= date %>
+<% end %>
     </div>
-    <div role="tabpanel" class="tab-pane" id="polepass">
-      <%= image_tag "polepass.png", style: 'border: 2px solid #bce8f1' %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="fibralp">
-      <%= image_tag "fibralp.png", style: 'border: 2px solid #bce8f1' %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="lcabox">
-      <%= image_tag "lcabox.png", style: 'border: 2px solid #bce8f1' %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="betongoal">
-      <%= image_tag "bog_home.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "bog_league.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "bog_player.png", style: 'border: 2px solid #bce8f1' %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="greetest">
-      <%= image_tag "greetest_landing.png", style: 'border: 2px solid #bce8f1' %>
-      <hr>
-      <%= image_tag "greetest_home.png", style: 'border: 2px solid #bce8f1' %>
-    </div>
+
+  
+
   </div>
 
 </div>
