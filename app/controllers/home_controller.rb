@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
 
+    require 'unirest'
+
   def index
   end
 
