@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'home/index'
+
+  get 'home/clic'  => 'home#clic'
 
   root 'home#index'
 

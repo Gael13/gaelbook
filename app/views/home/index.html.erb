@@ -15,17 +15,24 @@
 </div>-->
 
 <div class="row-fluid" style="margin: 20px 20px 0 20px;">
-<div class="col-md-12">
 <a style="display:none;" id="back">Retour aux magasins</a>
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" id="tab_stores" class="active"><a href="#loreal" aria-controls="loreal" role="tab" data-toggle="tab">Magasins</a></li>
-    <li role="presentation" style="display:none;"><a href="#pepsico" aria-controls="pepsico" role="tab" data-toggle="tab">RDV</a></li>
+    <li role="presentation"><a href="#pepsico" aria-controls="pepsico" role="tab" data-toggle="tab">RDV</a></li>
+    <li role="presentation" style=""><a href="#mesrdv" aria-controls="mesrdv" role="tab" data-toggle="tab">Mes RDV</a></li>
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content" style="margin-top: 30px;">
+  <div class="tab-content">
+
+    <div class="row" >
+    <div class="col-lg-12" style="height:20px; background-color: #d5f1f6; border-color: #2db7d2; margin: 0px 15px 0px 15px;">
+
+    </div>
+    </div>
+
     <div role="tabpanel" class="tab-pane active" id="loreal">
       <!--<div id="filters">
     Color: <select id="filter-select">
@@ -53,151 +60,107 @@
 </div>-->
 
 
-<h3 style="margin-left: 20px;">Boulanger - recherche de magasins</h3>
 
-<p><input type="text" class="quicksearch" placeholder="Search" style="margin-left: 20px;" /></p>
+    <%= render 'home/list_isotope_stores' %>
 
-<div class="container">
-  <div class="element-item transition metal " data-category="transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Paris Rivoli</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">80</p>
-    <p class="weight">200.59</p>
-  </div>
-  <div class="element-item metalloid " data-category="metalloid">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Paris Chatelet</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">52</p>
-    <p class="weight">127.6</p>
-  </div>
-  <div class="element-item post-transition metal " data-category="post-transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Paris Bastille</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">83</p>
-    <p class="weight">208.980</p>
-  </div>
-  <div class="element-item post-transition metal " data-category="post-transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Paris Nation</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">82</p>
-    <p class="weight">207.2</p>
-  </div>
-  <div class="element-item transition metal " data-category="transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Paris Ternes</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">79</p>
-    <p class="weight">196.967</p>
-  </div>
-  <div class="element-item alkali metal " data-category="alkali">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Lyon 1</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">19</p>
-    <p class="weight">39.0983</p>
-  </div>
-  <div class="element-item alkali metal " data-category="alkali">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Lyon 2</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">11</p>
-    <p class="weight">22.99</p>
-  </div>
-  <div class="element-item transition metal " data-category="transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Marseille Vieux-Port</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">48</p>
-    <p class="weight">112.411</p>
-  </div>
-  <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %><h3 class="title">Marseille Prado</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">20</p>
-    <p class="weight">40.078</p>
-  </div>
-  <div class="element-item transition metal " data-category="transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Marseille Joliette</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">75</p>
-    <p class="weight">186.207</p>
-  </div>
-  <div class="element-item post-transition metal " data-category="post-transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %><h3 class="title">Boulogne-Billancourt</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">81</p>
-    <p class="weight">204.383</p>
-  </div>
-  <div class="element-item metalloid " data-category="metalloid">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Issy-les-moulineaux</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">51</p>
-    <p class="weight">121.76</p>
-  </div>
-  <div class="element-item transition metal " data-category="transition">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Sèvres</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">27</p>
-    <p class="weight">58.933</p>
-  </div>
-  <div class="element-item lanthanoid metal inner-transition " data-category="lanthanoid">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Meudon</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">70</p>
-    <p class="weight">173.054</p>
-  </div>
-  <div class="element-item noble-gas nonmetal " data-category="noble-gas">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Puteaux</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">18</p>
-    <p class="weight">39.948</p>
-  </div>
-  <div class="element-item diatomic nonmetal " data-category="diatomic">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %><h3 class="title">Neuilly</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">7</p>
-    <p class="weight">14.007</p>
-  </div>
-  <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Levallois</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">92</p>
-    <p class="weight">238.029</p>
-  </div>
-  <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-    <%= image_tag "boulanger.png", class: 'image', style: 'border: 2px solid #bce8f1; height: 150px; margin: 80px 15px 15px 15px;' %>
-    <h3 class="title">Suresnes</h3>
-    <p class="symbol">Bo</p>
-    <p class="number">94</p>
-    <p class="weight">(244)</p>
-  </div>
-</div>
+
 
 
     </div>
-    <div role="tabpanel" class="tab-pane" style="display: none;" id="pepsico">
-      
-      <%= month_calendar do |date| %>
+
+    <div role="tabpanel" class="tab-pane" id="pepsico">
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Catégories de prestations
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <%= render 'home/list_isotope_interventions' %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Prestations
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <%= render 'home/list_isotope_interventions' %>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Date et Heure
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <%= week_calendar number_of_weeks: 2 do |date| %>
   <%= date %>
 <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      
     </div>
 
-  
+     <div role="tabpanel" class="tab-pane" style="" id="mesrdv">
+
+<div class="row" >
+
+<div class="col-lg-7 col-md-7" style="margin: 20px;">
+ <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_gU4cbeEXSXRTHy9qnqZPtxa6rk56b_s
+    &q=Solocal,Boulogne-Billancourt" allowfullscreen>
+</iframe>
+</div>
+
+
+ 
+
+    <div class="col-lg-4 col-md-4" style="height: 450px;background-color: white; border-color: black; margin: 20px 15px 20px 15px; border-radius: 10px;;">
+
+    </div>
+
+     <%= month_calendar do |date| %>
+  <%= date %>
+<% end %>
+      </div>
+
+
+
+   </div>
+
+
+
+
+
+    </div>
+
+    
 
   </div>
 
-</div>
-</div>
 
+</div>
 
 

@@ -6,6 +6,9 @@ gem 'rails', '4.2.3'
 gem 'bootstrap-sass', '~> 3.3.4'
 
 gem "simple_calendar", "~> 2.0"
+gem 'geocoder'
+gem 'devise'
+require 'unirest'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do # <<<< :development, not devlopment

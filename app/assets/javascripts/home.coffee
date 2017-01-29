@@ -15,15 +15,11 @@ $ ->
   $('.image').click ->
     $('#pepsico').show()
     $('#loreal').hide()
-    $('#tab_stores').hide()
-    $('#back').show()
     return
 
   $('#back').click ->
     $('#pepsico').hide()
     $('#loreal').show()
-    $('#tab_stores').show()
-    $('#back').hide()
     
 
   $('.quicksearch').on 'keyup', ->
@@ -32,7 +28,7 @@ $ ->
     console.log("VALUE", @value)
     runFilter()
     return
-  $('#filter-select').on 'change', ->
+  $('.filter-btn').on 'click', ->
     filters[1] = @value
     runFilter()
     return
@@ -57,6 +53,9 @@ $ ->
     return
 
   return
+
+
+    
 
 
 
